@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Rubik:wght@300&display=swap");
+.section {
+  height: max(700px, 100vh);
+  display: flex;
+  justify-content: center;
+  scroll-margin-top: 3.6em;
+}
+.sectionWrapper {
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+  }
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+  }
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+  }
+}
+.sectionWrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(200, 8px);
+}
+.section {
+  background: rgb(34, 193, 195);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
+}
+.slide-caption {
+  font-size: larger;
+  color: black;
+  font-family: "Rubik", sans-serif;
+}
+
+.heading {
+  grid-column: 5/9;
+  grid-row: 6;
+}
+.heading > h4 {
+  font-weight: 1000;
+  font-size: 2.5em;
+  font-family: "Rubik", sans-serif;
+}
+.carousalSlide {
+  grid-column: 3/11;
+  grid-row: 20;
+}
+.whiteImage {
+  height: 30em;
+}
+.messages > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
